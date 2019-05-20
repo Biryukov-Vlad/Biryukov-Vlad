@@ -17,7 +17,7 @@ $qwe: white solid 1px;
  
 @mixin border-radius($radius) { -webkit-border-radius: $radius; -moz-border-radius: $radius; -ms-border-radius: $radius; border-radius: $radius; }
   
-*{user-select: none;}
+
 
 body{  
     height: 2000px;
