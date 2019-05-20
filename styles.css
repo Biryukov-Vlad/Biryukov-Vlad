@@ -47,6 +47,10 @@ body .header {
       -ms-flex-pack: center;
           justify-content: center;
   height: 790px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 body .main-overlay {
