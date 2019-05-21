@@ -77,32 +77,46 @@
                 <div class="modal">
 
                     <div class="modal__container-top">
-                        <div class="group-selection">
-                            <span>What are your goals?</span> 
+                        <div class="group-selectio group-1">
+                            <span>What are your goals?</span>
                             <div class="modal-choose choose-top">
-                                <ol>
+                                <ol class="btnChoose" id="btnChoose" >
                                     <li>Choose</li>
+                                    <div class="arrow" id="arrowTop">></div>
+                                </ol>
+
+                                <ul class="detailed-list" id="detailed-list__top">
+                                    <li class="">Get more conversions</li>
+                                    <li class="">Get more phone leads</li>
+                                    <li class="">Lower cost per conversion</li>
+                                    <li class="">All of the above</li>
+                                    <li class="">Other...</li>
                                 </ul>
-                                    <ul>
-                                        <li>Get more conversions</li>
-                                        <li>Get more phone leads</li>
-                                        <li>Lower cost per conversion</li>
-                                        <li>All of the above</li>
-                                        <li>Other...</li>
-                                    </ul>
                             </div>
                         </div>
 
-                        <div class="group-selection">
+                        <div class="group-selectio group-2">
                             <span>What do you advertise?</span>
                             <div class="modal-choose choose-bottom">
-                                <p>Choose</p>
+                                <ol>
+                                    <li>Choose</li>
+                                </ol>
+                                <ul>
+                                    <li>Get more conversions</li>
+                                    <li>Get more phone leads</li>
+                                    <li>Lower cost per conversion</li>
+                                    <li>All of the above</li>
+                                    <li>Other...</li>
+                                </ul>
                             </div>
                         </div>
 
                         <div class="button-continue">
                             <a href="#" class="continue-link">CONTINUE ></a>
                         </div>
+
+                        <!--ModalChooseOpen-->
+                        <script src="js/modalChooseOpen.js"></script>
                     </div>
 
                     <div class="modal__container-bottom">

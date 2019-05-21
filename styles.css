@@ -430,7 +430,7 @@ body .header-top .menu ul .main-link:hover {
   /*display: none;*/
 }
 
-.modal-overlay .wrap-modal {
+.wrap-modal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,10 +448,9 @@ body .header-top .menu ul .main-link:hover {
   height: 80%;
   width: 80%;
   opacity: .99;
-  /*крестик*/
 }
 
-.modal-overlay .wrap-modal .modal {
+.modal {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -470,19 +469,39 @@ body .header-top .menu ul .main-link:hover {
   font-size: 14px;
 }
 
-.modal-overlay .wrap-modal .modal span {
+.modal__container-top {
+  text-align: center;
+}
+
+.group-selectio {
+  /*стрелочка вниз*/
+}
+
+.group-selectio span {
   display: inline-block;
-  font-size: 20px;
-  font-weight: 700;
+  color: #fff;
+  font-size: 23px;
   padding-bottom: 10px;
 }
 
-.modal-overlay .wrap-modal .modal p {
-  font-size: 14px;
-  background-color: #f1f3f4;
+.group-selectio li {
+  font-size: 19px;
+  color: #667482;
+  cursor: pointer;
 }
 
-.modal-overlay .wrap-modal .modal ul {
+.group-selectio ol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  width: 325px;
+  background-color: #f1f3f4;
+  padding: 15px;
+}
+
+.group-selectio ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -495,59 +514,58 @@ body .header-top .menu ul .main-link:hover {
   background-color: #fff;
   width: 325px;
   padding: 0px;
+}
+
+.group-selectio ul li {
+  text-align: left;
+  padding: 15px 15px 15px 15px;
+}
+
+.group-selectio ul li:hover {
+  background-color: #ff5056;
+  color: #fff;
+}
+
+.group-selectio #detailed-list__top {
   display: none;
 }
 
-.modal-overlay .wrap-modal .modal ul li {
-  padding: 15px  15px  15px  20px;
-}
-
-.modal-overlay .wrap-modal .modal .group-selection {
-  text-align: center;
-  color: #fff;
-  border: 1px solid blue;
-  width: 325px;
-}
-
-.modal-overlay .wrap-modal .modal .group-selection .modal-choose {
-  border: 1px solid blue;
-  border: 1px solid red;
-  text-align: left;
-  padding-left: 20px;
-  width: 100%;
-  background-color: #fff;
+.group-selectio .arrow {
+  position: absolute;
+  right: 30px;
+  top: 0;
+  bottom: 0;
+  font-size: 30px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
   color: #667482;
 }
 
-.modal-overlay .wrap-modal .modal .modal__container-top {
-  /*border: 1px black solid;*/
-  text-align: center;
+.group-selectio .arrow:hover {
+  color: #ff5056;
 }
 
-.modal-overlay .wrap-modal .modal .modal__container-top .button-continue {
+.button-continue {
+  display: none;
   margin-top: 35px;
 }
 
-.modal-overlay .wrap-modal .modal .modal__container-top a {
-  letter-spacing: 1.5px;
-  border-radius: 10px;
-  color: #fff;
-  background-color: #ff5056;
-  font-size: 15px;
-  padding: 15px 100px;
-}
-
-.modal-overlay .wrap-modal .modal .modal__container-top a:hover {
+a:hover {
   background-color: #f56a6e;
 }
 
-.modal-overlay .wrap-modal .modal-overlay__cross {
+.group-2 {
+  display: none;
+}
+
+/*крестик*/
+.modal-overlay__cross {
   position: absolute;
   top: 15px;
   right: 15px;
 }
 
-.modal-overlay .wrap-modal #modal-overlay__cross {
+#modal-overlay__cross {
   width: 25px;
   height: 25px;
   transform: rotate(45deg);
@@ -555,20 +573,20 @@ body .header-top .menu ul .main-link:hover {
   -webkit-transform: rotate(45deg);
 }
 
-.modal-overlay .wrap-modal #modal-overlay__cross:before, .modal-overlay .wrap-modal #modal-overlay__cross:after {
+#modal-overlay__cross:before, #modal-overlay__cross:after {
   content: "";
   position: absolute;
   background-color: #fff;
 }
 
-.modal-overlay .wrap-modal #modal-overlay__cross:before {
+#modal-overlay__cross:before {
   left: 50%;
   width: 30%;
   margin-left: -15%;
   height: 100%;
 }
 
-.modal-overlay .wrap-modal #modal-overlay__cross:after {
+#modal-overlay__cross:after {
   top: 50%;
   height: 30%;
   margin-top: -15%;
