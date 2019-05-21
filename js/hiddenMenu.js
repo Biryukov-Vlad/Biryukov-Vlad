@@ -1,7 +1,6 @@
 var hiddenMenu = document.getElementById('hidden-menu');
 var cross = document.getElementById('cross');
 var btnBurger = document.getElementById('btn-burger');
-var check = document.getElementsByClassName('main');
 
 
 btnBurger.onclick = function () {

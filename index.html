@@ -27,7 +27,7 @@
                         <li><a class="link__hidden-menu-3" href="#">CASE STUDIES</a></li>
                         <li><a class="link__hidden-menu-4" href="#">RESOURCES</a></li>
                         <li><a class="link__hidden-menu-5" href="#">BLOG</a></li>
-                        <li><a class="link__hidden-menu-6 main-link" href="#">GET PROPOSAL</a></li>
+                        <li><a class="link__hidden-menu-6 main-link" id="btnOffersModal" href="#">GET PROPOSAL</a></li>
                     </ul>
                 </div>
                 <div class="burger-menu" id="btn-burger">
@@ -64,26 +64,35 @@
             </div>
         </div>
 
-        <div class="modal-overlay">
+
+
+
+
+        <div class="modal-overlay" id="modal-overlay">
             <div class="wrap-modal">
+                <!--крестик-->
+                <a href="#">
+                    <div id="modal-overlay__cross" class="modal-overlay__cross"></div>
+                </a>
                 <div class="modal">
 
                     <div class="modal__container-top">
-                        <div class="group-selection group-selection-1">
+                        <div class="group-selection">
                             <p>What are your goals?</p>
-                            <div class="modal-choose__top">
+                            <div class="modal-choose choose-top">
                                 <p>Choose</p>
-                            </div>                            
+                            </div>
                         </div>
-                        
-                        <div class="group-selection group-selection-2">
-                                <p>What do you advertise?</p>
-                                <div class="modal-choose__bottom">
-                                    <p>Choose</p>
-                                </div>
+
+                        <div class="group-selection">
+                            <p>What do you advertise?</p>
+                            <div class="modal-choose choose-bottom">
+                                <p>Choose</p>
+                            </div>
                         </div>
+
                         <div class="button-continue">
-                            <a href="#">continue ></a>
+                            <a href="#" class="continue-link">continue ></a>
                         </div>
                     </div>
 
@@ -100,6 +109,7 @@
                     </div>
                 </div>
             </div>
+            <script src="js/modalOverlay.js"></script>
         </div>
     </div>
 

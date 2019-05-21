@@ -340,19 +340,21 @@ body{
  /*GET PROPOSAL*/
  
  .modal-overlay{
+   
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
     position: fixed;
     width: 100%;
     height: 100%;
     z-index: 4;
     background-color:$hidden-overlay;
-
+    display: none;
     .wrap-modal{
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
         @include border-radius(10px);
         background-color: $modal;
         max-height: 570px;
@@ -362,15 +364,80 @@ body{
         opacity: .99; 
 
         .modal{
+            user-select: none;
             display: flex;
             justify-content: center;
             align-items: center;
+            font-family: $lato;
+            p{font-size: 15px;}
 
             .modal__container-top{
-
+                /*border: 1px black solid;*/
+                text-align: center;
+                .button-continue{margin-top: 35px;} 
+                 a{
+                    @include border-radius(10px);
+                    color:$white;
+                    background-color: $pink;
+                    font-size: 20px;
+                    padding: 15px 100px;                   
+                }
+                  a:hover{background-color:$light-pink}
             }
 
-        }      
+            .group-selection{
+                text-align: center;
+                color: $white;
+                /*border: 1px solid blue;*/
+                width: 325px;
+                .modal-choose{
+                    border: 1px solid white;
+                    text-align: left;
+                    padding-left: 20px;
+                    width: 100%;
+                    background-color: $white;
+                    color: $gray;
+
+                }
+            }
+        } 
+        /*крестик*/
+    .modal-overlay__cross{
+        position: absolute;
+        top: 15px;   
+        right: 15px;
+    }
+    #modal-overlay__cross {
+        
+        width: 25px;
+        height: 25px;
+        transform:rotate(45deg);
+        -ms-transform:rotate(45deg); 
+        -webkit-transform:rotate(45deg);  
+ }
+
+
+ #modal-overlay__cross:before, #modal-overlay__cross:after {
+     content: "";
+     position: absolute;
+     background-color:$white;
+ }
+ 
+ #modal-overlay__cross:before {
+     left: 50%;
+     width: 30%;
+     margin-left: -15%;
+     height: 100%;
+     
+   
+ }
+  #modal-overlay__cross:after {
+   top: 50%;
+   height: 30%;
+   margin-top: -15%;
+   width: 100%;
+ }
+     
     } 
  }
 
