@@ -89,7 +89,7 @@ body{
             user-select: none;
             display: flex;
             align-items: center; 
-            img{height: 43px;}                         /*klientboost img*/
+            img{height: 43px;}                          /*klientboost img*/
             
             .WERE-HIRING{                             /*WE'RE HIRING*/
                 display: flex;
@@ -97,7 +97,7 @@ body{
                 position: relative;
                 left: 30px;
                 color: $white; 
-                background-color: $pink;
+                background-color: $pink;/**/
                 @include border-radius(3px);   
                 padding: 4px 12px;
                 z-index: 2;                                                                            
@@ -338,10 +338,15 @@ body{
 
 
 
+
+
+
+
+
+/*модальное окно*/
  /*GET PROPOSAL*/
  
- .modal-overlay{
-   
+ .modal-overlay{   
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -351,9 +356,9 @@ body{
     height: 100%;
     z-index: 4;
     background-color:$hidden-overlay;
-    /*display: none;*/
+   /* display: none;*/
     }
-
+    
     .wrap-modal{
         display: flex;
         justify-content: center;
@@ -365,57 +370,65 @@ body{
         max-width: 670px;
         height: 80%;
         width: 80%;
-        opacity: .99;}
+        opacity: .99;
+        border: solid 2px red}
 
     .modal{
         position: relative;
         display: flex;
         justify-content: center;
-        align-items: center;
         user-select: none;
+        width: 345px;
+        height: 350px; 
         font-family: $lato;
         font-size: $font-size__modal;
+        border: solid 2px black;
     }
 
     .modal__container-top{
-            text-align: center;                
+        text-align: center;              
     } 
-            
+
+         
+    
+
+
     .group-selectio{  
-            
         span{
             display: inline-block;
             color: $white;
             font-size: 23px;
-            padding-bottom: 10px; 
+            padding-bottom: 10px;
+            position: relative; 
         } 
 
-        li{
-            font-size: 19px; 
-            color: $gray;
-            cursor: pointer;
-        } 
-        ol{
-            display: flex;
-            position: relative;
-            cursor: pointer;
-            width: 325px;
-            background-color:#f1f3f4;;
-            padding: 15px; 
-                    
+        .main-offer{
+            background-color:#f1f3f4;
+            padding: 15px 15px 15px 10px; 
         }
+        .main-offer:hover{
+            background-color:#f1f3f4;
+            color: $gray; 
+        }
+       
+     
         ul{                
             display: flex;
             position: absolute;
             left: 0;
             flex-direction: column;
             background-color: $white;
-            width: 325px;
+            width: 100%;
             padding: 0px;
             li{
+                font-size: 13px; 
+                color: $gray;
+                cursor: pointer;
                 text-align: left;
-                padding: 15px 15px 15px 15px ;  
+                padding: 10px ; 
+                border-top: 0.5px solid rgba(128, 128, 128, 0.397);
             }
+                
             li:hover{ 
                 background-color: $pink;
                 color: $white;
@@ -423,29 +436,40 @@ body{
         }
 
 
-        #detailed-list__top{
+        #offerList__top{
             display: none;
-        }
-
-       
-
-
-
-
-        /*стрелочка вниз*/
-        .arrow{
             position: absolute;
-            right: 30px;
+            
+        }
+    }  
+
+
+ /*стрелка смотрит вниз*/
+        #arrowTopDown{
+            position: absolute;
+            right: 25px;
             top: 0; 
             bottom: 0;
-            font-size: 30px; 
+            font-size: 25px; 
             transform: rotate(90deg) ;
             color: $gray;
         }
-        .arrow:hover{
-            color: $pink;
+        #arrowTopDown:hover{ 
+            color: $pink; 
         }  
-    }  
+        /*стрелка смотрит вверх*/
+        
+        #arrowTopUp{
+            position: absolute;
+            top: 10px ; 
+            right: 19px; 
+            font-size: 25px; 
+            transform: rotate(270deg) ;
+            color: $pink;
+        }
+       
+
+
 
 
 
@@ -453,7 +477,7 @@ body{
         display: none;
         margin-top: 35px;} 
        
-        a:hover{background-color:$light-pink}
+      
 .group-2{display: none;}
 
 

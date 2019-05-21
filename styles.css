@@ -120,6 +120,7 @@ body .header-top .logo .WERE-HIRING {
   left: 30px;
   color: #fff;
   background-color: #ff5056;
+  /**/
   border-radius: 3px;
   padding: 4px 12px;
   z-index: 2;
@@ -411,6 +412,7 @@ body .header-top .menu ul .main-link:hover {
   width: 100%;
 }
 
+/*модальное окно*/
 /*GET PROPOSAL*/
 .modal-overlay {
   display: -webkit-box;
@@ -427,7 +429,7 @@ body .header-top .menu ul .main-link:hover {
   height: 100%;
   z-index: 4;
   background-color: rgba(0, 0, 0, 0.75);
-  /*display: none;*/
+  /* display: none;*/
 }
 
 .wrap-modal {
@@ -448,6 +450,7 @@ body .header-top .menu ul .main-link:hover {
   height: 80%;
   width: 80%;
   opacity: .99;
+  border: solid 2px red;
 }
 
 .modal {
@@ -458,23 +461,19 @@ body .header-top .menu ul .main-link:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  width: 345px;
+  height: 350px;
   font-family: "Lato", sans-serif;
   font-size: 14px;
+  border: solid 2px black;
 }
 
 .modal__container-top {
   text-align: center;
-}
-
-.group-selectio {
-  /*стрелочка вниз*/
 }
 
 .group-selectio span {
@@ -482,23 +481,17 @@ body .header-top .menu ul .main-link:hover {
   color: #fff;
   font-size: 23px;
   padding-bottom: 10px;
-}
-
-.group-selectio li {
-  font-size: 19px;
-  color: #667482;
-  cursor: pointer;
-}
-
-.group-selectio ol {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: relative;
-  cursor: pointer;
-  width: 325px;
+}
+
+.group-selectio .main-offer {
   background-color: #f1f3f4;
-  padding: 15px;
+  padding: 15px 15px 15px 10px;
+}
+
+.group-selectio .main-offer:hover {
+  background-color: #f1f3f4;
+  color: #667482;
 }
 
 .group-selectio ul {
@@ -512,13 +505,17 @@ body .header-top .menu ul .main-link:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #fff;
-  width: 325px;
+  width: 100%;
   padding: 0px;
 }
 
 .group-selectio ul li {
+  font-size: 13px;
+  color: #667482;
+  cursor: pointer;
   text-align: left;
-  padding: 15px 15px 15px 15px;
+  padding: 10px;
+  border-top: 0.5px solid rgba(128, 128, 128, 0.397);
 }
 
 .group-selectio ul li:hover {
@@ -526,32 +523,41 @@ body .header-top .menu ul .main-link:hover {
   color: #fff;
 }
 
-.group-selectio #detailed-list__top {
+.group-selectio #offerList__top {
   display: none;
+  position: absolute;
 }
 
-.group-selectio .arrow {
+/*стрелка смотрит вниз*/
+#arrowTopDown {
   position: absolute;
-  right: 30px;
+  right: 25px;
   top: 0;
   bottom: 0;
-  font-size: 30px;
+  font-size: 25px;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   color: #667482;
 }
 
-.group-selectio .arrow:hover {
+#arrowTopDown:hover {
+  color: #ff5056;
+}
+
+/*стрелка смотрит вверх*/
+#arrowTopUp {
+  position: absolute;
+  top: 10px;
+  right: 19px;
+  font-size: 25px;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
   color: #ff5056;
 }
 
 .button-continue {
   display: none;
   margin-top: 35px;
-}
-
-a:hover {
-  background-color: #f56a6e;
 }
 
 .group-2 {

@@ -1,11 +1,10 @@
-var openChosseTop = document.getElementById('btnChoose');
-var closeListTop = document.getElementById('detailed-list__top');
-var arrowTop= document.getElementById('arrowTop')
+var openOffer =  document.getElementById('openOffer'); //выбор предложений
+var offerList__top = document.getElementById('offerList__top');
 
-openChosseTop.onclick = function () {
-    if (closeListTop.style.display = 'none'){
-        closeListTop.style.display = 'flex';
-    }
-    
+openOffer.onclick=function(){
+    offerList__top.style.display='flex'
 }
 
+offerList__top.onclick=function(){
+    offerList__top.style.display='none'
+}
