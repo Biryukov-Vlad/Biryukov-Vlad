@@ -6,6 +6,7 @@ $blue:   rgb(106, 218, 247);
 $gray: #667482;
 $lato: 'Lato', sans-serif;  
 $font-size: 14px;
+$font-size__modal: 14px;
 $font-size__hidden-menu:28px;   
 $font-weight__hidden-menu: 700;
 $second: 0.2s;
@@ -343,13 +344,15 @@ body{
    
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: space-between;
+
     position: fixed;
     width: 100%;
     height: 100%;
     z-index: 4;
     background-color:$hidden-overlay;
-    display: none;
+    /*display: none;*/
+    
     .wrap-modal{
         display: flex;
         justify-content: center;
@@ -364,34 +367,48 @@ body{
         opacity: .99; 
 
         .modal{
-            user-select: none;
+            position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
+            user-select: none;
             font-family: $lato;
-            p{font-size: 15px;}
+            font-size: $font-size__modal;
 
-            .modal__container-top{
-                /*border: 1px black solid;*/
-                text-align: center;
-                .button-continue{margin-top: 35px;} 
-                 a{
-                    @include border-radius(10px);
-                    color:$white;
-                    background-color: $pink;
-                    font-size: 20px;
-                    padding: 15px 100px;                   
-                }
-                  a:hover{background-color:$light-pink}
+           
+            span{
+                display: inline-block;
+                font-size: 20px;
+                font-weight: 700;
+                padding-bottom: 10px; 
+            } 
+            p{                
+                font-size: $font-size__modal;
+                background-color: #f1f3f4;  
             }
-
+            ul{
+                
+                display: flex;
+                position: absolute;
+                left: 0;
+                flex-direction: column;
+                background-color: $white;
+                width: 325px;
+                padding: 0px;
+                display: none; 
+                li{
+                    padding: 15px  15px  15px  20px; 
+                }
+            }
+            
             .group-selection{
                 text-align: center;
                 color: $white;
-                /*border: 1px solid blue;*/
+                border: 1px solid blue;
                 width: 325px;
                 .modal-choose{
-                    border: 1px solid white;
+                    border: 1px solid blue;
+                    border: 1px solid red;
                     text-align: left;
                     padding-left: 20px;
                     width: 100%;
@@ -400,6 +417,23 @@ body{
 
                 }
             }
+            
+            .modal__container-top{
+                /*border: 1px black solid;*/
+                text-align: center;
+                .button-continue{
+                    margin-top: 35px;} 
+                    a{
+                        letter-spacing: 1.5px;
+                        @include border-radius(10px);
+                        color:$white;
+                        background-color: $pink;
+                        font-size: 15px;
+                        padding: 15px 100px;                   
+                }
+                a:hover{background-color:$light-pink}
+            }
+
         } 
         /*крестик*/
     .modal-overlay__cross{
