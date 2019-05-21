@@ -429,7 +429,7 @@ body .header-top .menu ul .main-link:hover {
   height: 100%;
   z-index: 4;
   background-color: rgba(0, 0, 0, 0.75);
-  /* display: none;*/
+  display: none;
 }
 
 .wrap-modal {
