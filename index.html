@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="SCSS/styles.css">
     <link rel="stylesheet" href="media/media.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i" rel="stylesheet">
     <title>klientboost</title>
@@ -12,8 +12,11 @@
 <body>
     <div class="main">
         <div class="header">
-            <div class="main-overlay"></div>
-            <div class="header-overlay"></div>
+            <div class="header-overlay">
+                <div class="stars"></div>
+                <div class="clouds"></div>
+            </div>
+            <div class="header-top__overlay"></div>
             <div class="header-top">
                 <div class="logo">
                     <a href="#" class="KlientBoost"> <img src="img/klientboost-logo-blue.png" alt="#"></a>
@@ -83,9 +86,9 @@
 
                             <div class="modal-choose choose-top">
                                 <ul class="offerSelection" id="openOffer">
-                                        
+
                                     <li class="main-offer ">Choose</li>
-                                    <div  id="arrowTopDown">></div>
+                                    <div id="arrowTopDown">></div>
 
                                 </ul>
 
@@ -96,7 +99,7 @@
                                     <li>Lower cost per conversion</li>
                                     <li>All of the above</li>
                                     <li>Other...</li>
-                                    <div  id="arrowTopUp">></div>
+                                    <div id="arrowTopUp">></div>
                                 </ul>
                             </div>
                         </div>

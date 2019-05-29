@@ -42,10 +42,11 @@ body .header {
   height: 790px;
 }
 
-body .main-overlay {
+body .header-overlay {
   position: absolute;
   top: 0;
   width: 100%;
+  max-width: 1550px;
   height: 790px;
   z-index: 0;
   opacity: 0.9;
@@ -53,7 +54,30 @@ body .main-overlay {
   background-image: linear-gradient(-180deg, #0e1f35, #21455c);
 }
 
-body .header-overlay {
+body .header-overlay .stars {
+  background-image: url(/img/stars.png);
+  position: absolute;
+  background-repeat: no-repeat;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-size: 640px 500px;
+}
+
+body .header-overlay .clouds {
+  background-image: url(/img/clouds.png);
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  height: 209px;
+  background-position: center 0;
+  background-size: 100%;
+}
+
+body .header-top__overlay {
   position: fixed;
   top: 0;
   width: 9999px;
