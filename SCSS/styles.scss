@@ -24,9 +24,46 @@ $qwe: white solid 1px;
   border-radius: $radius;
 }
 
-body {
-  height: 2000px;
+.btn-center {
+  text-align: center;
+}
+.btn {
+  /*BTN*/
+  a {
+    line-height: 60px;
+    font-size: 1.2em;
+    padding: 15px 32px;
+    @include border-radius(7px);
+  }
+}
+.btn-red {
+  a {
+    background: $pink;
+    color: $white;
+  }
+  a:hover {
+    background: $light-pink;
+    transition-property: background;
+    transition-duration: $second;
+  }
+}
+.btn-white {
+  a {
+    background: $white;
+    color: $pink;
+    border: 3px solid $pink;
+  }
+  a:hover {
+    color: $white;
+    border: 3px solid $pink;
+    background: $light-pink;
+    transition-property: border;
+    transition-property: background;
+    transition-duration: $second;
+  }
+}
 
+body {
   .main {
     display: flex;
     flex-direction: column;
@@ -56,8 +93,6 @@ body {
       top: 0;
       background-size: 640px 500px;
     }
-
-    
   }
 
   .header-top__overlay {
@@ -208,19 +243,6 @@ body {
     font-size: 3em;
     padding: 0px 20px;
     padding-bottom: 22px;
-  }
-  a {
-    padding: 15px 32px;
-    background: $pink;
-    color: $white;
-    @include border-radius(7px);
-    font-size: 1.2em;
-    line-height: 60px;
-  }
-  a:hover {
-    background: $light-pink;
-    transition-property: background;
-    transition-duration: $second;
   }
 }
 
@@ -488,37 +510,53 @@ body {
   width: 100%;
 }
 
+/*modal END*/
 
-.section{
+/*blog*/
+.section {
   display: flex;
-  align-items: center; 
+  align-items: center;
   flex-direction: column;
-  border: 1px solid black;
   height: 455px;
   padding: 50px 0;
 }
 
-.container{
-  border: orange 1px solid;
+.container {
   margin: 0 25px;
   max-width: 1550px;
   width: 100%;
 }
-.row{
+.row {
   text-align: center;
   font-family: $lato;
 }
 
-.video-container{
-border:2px solid black;
-display: flex;
-justify-content: center;
 
+
+
+.container__blog {
+  display: flex;
+  justify-content:space-around; 
 }
-.preview{
+.blog {
+  text-align: center;
+}
+.blog__video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.preview {
   width: 360px;
   height: 214px;
 }
-.video{
-  text-align: center;
+
+.play-img {
+  width: 100px;
 }
+.play {
+  position: absolute;
+  border: solid red 1px; 
+  @include border-radius(50%)
+}
+

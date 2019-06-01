@@ -18,8 +18,50 @@ li {
           box-sizing: border-box;
 }
 
-body {
-  height: 2000px;
+.btn-center {
+  text-align: center;
+}
+
+.btn {
+  /*BTN*/
+}
+
+.btn a {
+  line-height: 60px;
+  font-size: 1.2em;
+  padding: 15px 32px;
+  border-radius: 7px;
+}
+
+.btn-red a {
+  background: #ff5056;
+  color: #fff;
+}
+
+.btn-red a:hover {
+  background: #f56a6e;
+  -webkit-transition-property: background;
+  transition-property: background;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.btn-white a {
+  background: #fff;
+  color: #ff5056;
+  border: 3px solid #ff5056;
+}
+
+.btn-white a:hover {
+  color: #fff;
+  border: 3px solid #ff5056;
+  background: #f56a6e;
+  -webkit-transition-property: border;
+  transition-property: border;
+  -webkit-transition-property: background;
+  transition-property: background;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
 }
 
 body .main {
@@ -275,23 +317,6 @@ body .header-top .menu ul .main-link:hover {
   font-size: 3em;
   padding: 0px 20px;
   padding-bottom: 22px;
-}
-
-.header-bottom a {
-  padding: 15px 32px;
-  background: #ff5056;
-  color: #fff;
-  border-radius: 7px;
-  font-size: 1.2em;
-  line-height: 60px;
-}
-
-.header-bottom a:hover {
-  background: #f56a6e;
-  -webkit-transition-property: background;
-  transition-property: background;
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
 }
 
 .burger-menu__button {
@@ -602,6 +627,8 @@ body .header-top .menu ul .main-link:hover {
   width: 100%;
 }
 
+/*modal END*/
+/*blog*/
 .section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -613,13 +640,11 @@ body .header-top .menu ul .main-link:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid black;
   height: 455px;
   padding: 50px 0;
 }
 
 .container {
-  border: orange 1px solid;
   margin: 0 25px;
   max-width: 1550px;
   width: 100%;
@@ -630,11 +655,25 @@ body .header-top .menu ul .main-link:hover {
   font-family: "Lato", sans-serif;
 }
 
-.video-container {
-  border: 2px solid black;
+.container__blog {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.blog {
+  text-align: center;
+}
+
+.blog__video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -645,7 +684,13 @@ body .header-top .menu ul .main-link:hover {
   height: 214px;
 }
 
-.video {
-  text-align: center;
+.play-img {
+  width: 100px;
+}
+
+.play {
+  position: absolute;
+  border: solid red 1px;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=styles.css.map */
