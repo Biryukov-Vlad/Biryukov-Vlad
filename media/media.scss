@@ -3,7 +3,9 @@
     position: fixed;
     left: 10px;
   }
-
+  .preview {
+    width: 330px; 
+  }
   .menu {
     position: fixed;
     right: 0;
@@ -15,20 +17,39 @@
       font-size: 12px;
     }
   }
+  .preview {
+    width: 300px; 
+  }
 }
+
 @media (max-width: 991px) {
   .menu {
     a {
       font-size: 10px;
     }
   }
-  
+  .preview {
+    width: 280px; 
+  }
 }
+
 @media (max-width: 931px) {
   .menu {
     a {
       font-size: 8px;
     }
+  }
+  .preview {
+    width: 270px; 
+  }
+}
+
+@media (max-width: 880px) {
+  .container__blog{
+    flex-direction: column;
+  }
+  .preview {
+    width: 360px; 
   }
 }
 

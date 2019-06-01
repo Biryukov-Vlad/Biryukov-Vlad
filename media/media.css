@@ -3,6 +3,9 @@
     position: fixed;
     left: 10px;
   }
+  .preview {
+    width: 330px;
+  }
   .menu {
     position: fixed;
     right: 0;
@@ -13,17 +16,38 @@
   .menu a {
     font-size: 12px;
   }
+  .preview {
+    width: 300px;
+  }
 }
 
 @media (max-width: 991px) {
   .menu a {
     font-size: 10px;
   }
+  .preview {
+    width: 280px;
+  }
 }
 
 @media (max-width: 931px) {
   .menu a {
     font-size: 8px;
+  }
+  .preview {
+    width: 270px;
+  }
+}
+
+@media (max-width: 880px) {
+  .container__blog {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .preview {
+    width: 360px;
   }
 }
 

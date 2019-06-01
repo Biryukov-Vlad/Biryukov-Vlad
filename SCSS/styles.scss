@@ -531,15 +531,13 @@ body {
   font-family: $lato;
 }
 
-
-
-
 .container__blog {
   display: flex;
-  justify-content:space-around; 
+  justify-content: center;
 }
 .blog {
   text-align: center;
+  margin: 0 10px;
 }
 .blog__video {
   display: flex;
@@ -547,8 +545,7 @@ body {
   justify-content: center;
 }
 .preview {
-  width: 360px;
-  height: 214px;
+  width: 360px; 
 }
 
 .play-img {
@@ -556,7 +553,5 @@ body {
 }
 .play {
   position: absolute;
-  border: solid red 1px; 
-  @include border-radius(50%)
+  @include border-radius(50%);
 }
-
