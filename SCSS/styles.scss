@@ -13,7 +13,7 @@ $second: 0.2s;
 $modal: #2f6681;
 $hidden-overlay: rgba(0, 0, 0, 0.75);
 $main-overlay: rgb(105, 99, 99);
-$header-overlay: rgba(253, 253, 253, 0.767);
+$header-overlay: rgba(253, 253, 253, 0.966);
 $red: red solid 2px;
 $qwe: white solid 1px;
 
@@ -37,13 +37,13 @@ body {
     height: 790px;
   }
   .header-overlay {
+    border: black 1px solid;
     position: absolute;
     top: 0;
     width: 100%;
     max-width: 1550px;
     height: 790px;
     z-index: 0;
-    opacity: 0.9;
     background-image: linear-gradient(-180deg, #0e1f35, #21455c);
 
     .stars {
@@ -57,17 +57,7 @@ body {
       background-size: 640px 500px;
     }
 
-    .clouds{
-      background-image: url(/img/clouds.png);
-      position: absolute;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      background-repeat: no-repeat;
-      height: 209px;
-      background-position: center 0;
-      background-size: 100%;
-    }
+    
   }
 
   .header-top__overlay {
@@ -208,9 +198,6 @@ body {
   user-select: none;
   font-family: $lato;
 
-  .wrap__img-rocket {
-    margin-top: 60px;
-  }
   img {
     height: 198px;
   }
@@ -499,4 +486,39 @@ body {
   height: 30%;
   margin-top: -15%;
   width: 100%;
+}
+
+
+.section{
+  display: flex;
+  align-items: center; 
+  flex-direction: column;
+  border: 1px solid black;
+  height: 455px;
+  padding: 50px 0;
+}
+
+.container{
+  border: orange 1px solid;
+  margin: 0 25px;
+  max-width: 1550px;
+  width: 100%;
+}
+.row{
+  text-align: center;
+  font-family: $lato;
+}
+
+.video-container{
+border:2px solid black;
+display: flex;
+justify-content: center;
+
+}
+.preview{
+  width: 360px;
+  height: 214px;
+}
+.video{
+  text-align: center;
 }

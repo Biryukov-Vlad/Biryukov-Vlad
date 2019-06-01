@@ -43,13 +43,13 @@ body .header {
 }
 
 body .header-overlay {
+  border: black 1px solid;
   position: absolute;
   top: 0;
   width: 100%;
   max-width: 1550px;
   height: 790px;
   z-index: 0;
-  opacity: 0.9;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#0e1f35), to(#21455c));
   background-image: linear-gradient(-180deg, #0e1f35, #21455c);
 }
@@ -65,24 +65,12 @@ body .header-overlay .stars {
   background-size: 640px 500px;
 }
 
-body .header-overlay .clouds {
-  background-image: url(/img/clouds.png);
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background-repeat: no-repeat;
-  height: 209px;
-  background-position: center 0;
-  background-size: 100%;
-}
-
 body .header-top__overlay {
   position: fixed;
   top: 0;
   width: 9999px;
   height: 80px;
-  background-color: rgba(253, 253, 253, 0.767);
+  background-color: rgba(253, 253, 253, 0.966);
   z-index: 2;
 }
 
@@ -271,10 +259,6 @@ body .header-top .menu ul .main-link:hover {
       -ms-user-select: none;
           user-select: none;
   font-family: "Lato", sans-serif;
-}
-
-.header-bottom .wrap__img-rocket {
-  margin-top: 60px;
 }
 
 .header-bottom img {
@@ -616,5 +600,52 @@ body .header-top .menu ul .main-link:hover {
   height: 30%;
   margin-top: -15%;
   width: 100%;
+}
+
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid black;
+  height: 455px;
+  padding: 50px 0;
+}
+
+.container {
+  border: orange 1px solid;
+  margin: 0 25px;
+  max-width: 1550px;
+  width: 100%;
+}
+
+.row {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
+.video-container {
+  border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.preview {
+  width: 360px;
+  height: 214px;
+}
+
+.video {
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */
