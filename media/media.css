@@ -37,6 +37,9 @@
   .preview {
     width: 270px;
   }
+  .blog p {
+    font-size: 17px;
+  }
 }
 
 @media (max-width: 880px) {
@@ -69,6 +72,9 @@
 @media (max-width: 600px) {
   .KlientBoost {
     display: none;
+  }
+  .blog p {
+    font-size: 12px;
   }
 }
 

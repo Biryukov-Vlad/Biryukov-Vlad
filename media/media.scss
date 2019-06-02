@@ -42,6 +42,11 @@
   .preview {
     width: 270px; 
   }
+  .blog{
+    p{
+      font-size: 17px;
+    }
+  }
 }
 
 @media (max-width: 880px) {
@@ -60,6 +65,7 @@
   .menu {
     display: none;
   }
+ 
 }
 
 @media (max-width: 690px) {
@@ -72,11 +78,17 @@
   .KlientBoost {
     display: none;
   }
+   .blog{
+    p{
+      font-size: 12px;
+    }
+  }
 }
 @media (min-width: 601px) {
   .kb {
     display: none;
   }
+ 
 }
 
 
