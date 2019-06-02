@@ -1,5 +1,6 @@
 @import "reset";
 $pink: #ff5056;
+$dark-pink:#ff272f;
 $light-pink: rgb(245, 106, 110);
 $white: #fff;
 $blue: rgb(106, 218, 247);
@@ -14,8 +15,6 @@ $modal: #2f6681;
 $hidden-overlay: rgba(0, 0, 0, 0.75);
 $main-overlay: rgb(105, 99, 99);
 $header-overlay: rgba(253, 253, 253, 0.966);
-$red: red solid 2px;
-$qwe: white solid 1px;
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -39,6 +38,7 @@ $qwe: white solid 1px;
 }
 .btn-red {
   a {
+    border-bottom: 3px solid $dark-pink;
     background: $pink;
     color: $white;
   }
@@ -58,7 +58,7 @@ $qwe: white solid 1px;
   a:hover {
     color: $white;
     border: 3px solid $pink;
-    background: $light-pink;
+    background: $pink;
     transition-property: border;
     transition-property: background;
     transition-duration: $second;

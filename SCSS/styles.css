@@ -35,6 +35,7 @@ li {
 }
 
 .btn-red a {
+  border-bottom: 3px solid #ff272f;
   background: #ff5056;
   color: #fff;
 }
@@ -57,7 +58,7 @@ li {
 .btn-white a:hover {
   color: #fff;
   border: 3px solid #ff5056;
-  background: #f56a6e;
+  background: #ff5056;
   -webkit-transition-property: border;
   transition-property: border;
   -webkit-transition-property: background;
