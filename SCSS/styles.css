@@ -87,7 +87,6 @@ body .header {
 }
 
 body .header-overlay {
-  border: black 1px solid;
   position: absolute;
   top: 0;
   width: 100%;
@@ -454,11 +453,11 @@ body .header-top .menu ul .main-link:hover {
       -ms-flex-pack: center;
           justify-content: center;
   position: fixed;
+  display: none;
   width: 100%;
   height: 100%;
   z-index: 4;
   background-color: rgba(0, 0, 0, 0.75);
-  display: none;
 }
 
 .wrap-modal {
@@ -479,7 +478,6 @@ body .header-top .menu ul .main-link:hover {
   height: 80%;
   width: 80%;
   opacity: 0.99;
-  border: solid 2px red;
 }
 
 .modal {
@@ -498,7 +496,6 @@ body .header-top .menu ul .main-link:hover {
   height: 350px;
   font-family: "Lato", sans-serif;
   font-size: 14px;
-  border: solid 2px black;
 }
 
 .modal__container-top {
@@ -751,7 +748,16 @@ body .header-top .menu ul .main-link:hover {
   right: 5px;
   top: 0;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 16px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: #fff;
+  height: 23px;
+  width: 23px;
+  text-align: center;
+  border-radius: 50%;
 }
 
 .modal-blog-wrap {
@@ -765,7 +771,6 @@ body .header-top .menu ul .main-link:hover {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  background-color: #fff;
   width: 83%;
   height: 90%;
   border-radius: 7px;
@@ -774,7 +779,6 @@ body .header-top .menu ul .main-link:hover {
 .blog-video-wrap {
   width: 95%;
   height: 92%;
-  border: 1px solid black;
 }
 
 .video-content {

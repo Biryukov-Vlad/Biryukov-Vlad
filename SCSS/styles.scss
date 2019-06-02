@@ -76,7 +76,6 @@ body {
     height: 790px;
   }
   .header-overlay {
-    border: black 1px solid;
     position: absolute;
     top: 0;
     width: 100%;
@@ -360,13 +359,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
   position: fixed;
+  display: none;
   width: 100%;
   height: 100%;
   z-index: 4;
   background-color: $hidden-overlay;
-  display: none;
 }
 
 .wrap-modal {
@@ -381,7 +379,6 @@ body {
   height: 80%;
   width: 80%;
   opacity: 0.99;
-  border: solid 2px red;
 }
 
 .modal {
@@ -393,7 +390,6 @@ body {
   height: 350px;
   font-family: $lato;
   font-size: $font-size__modal;
-  border: solid 2px black;
 }
 
 .modal__container-top {
@@ -595,7 +591,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: 4;
-  display: none;  
+  display: none;
 }
 
 /*крестик  blog-cross*/
@@ -604,7 +600,13 @@ body {
   right: 5px;
   top: 0;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 16px;
+  user-select: none;
+  background-color: $white;
+  height: 23px;
+  width: 23px;
+  text-align: center;
+  @include border-radius(50%);
 }
 
 .modal-blog-wrap {
@@ -612,7 +614,8 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  background-color: $white;
+  //background-color: #a4c8dd2f;
+  //border: 1px solid #0e1f3518;
   width: 83%;
   height: 90%;
   @include border-radius(7px);
@@ -620,10 +623,8 @@ body {
 .blog-video-wrap {
   width: 95%;
   height: 92%;
-  border: 1px solid black;
 }
-.video-content{
+.video-content {
   width: 100%;
   height: 100%;
 }
-
