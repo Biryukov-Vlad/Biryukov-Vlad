@@ -10,8 +10,9 @@ var play_SaaS = document.getElementsByClassName('play-img_SaaS')[0];
 var modal_SaaS = document.getElementsByClassName('modal-blog-SaaS')[0];
 var cross_SaaS = document.getElementsByClassName('cross-SaaS')[0];
 
+var stopSaaSVideo = document.getElementsByClassName('cross-SaaS')[0];
+var videoSaaS = document.getElementsByClassName('video-SaaS')[0];
 
- 
 //Lead Gen
 play_LeadGen.onclick = function () {
     modal_LeadGen.style.display = 'flex';
@@ -57,3 +58,4 @@ window.onclick = function (event) {
         modal_SaaS.style.display = 'none';
     }
 }
+ 
