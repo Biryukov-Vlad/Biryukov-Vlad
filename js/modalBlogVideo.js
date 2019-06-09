@@ -4,7 +4,7 @@
     var play_LeadGen = document.getElementsByClassName('play-img_Lead-Gen')[0];
     var modal_LeadGen = document.getElementsByClassName('modal-blog-Lead-Gen')[0];
     var cross_LeadGen = document.getElementsByClassName('cross-Lead-Gen')[0];
-    //console.log(play_LeadGen);
+
     play_LeadGen.onclick = function () {
         modal_LeadGen.style.display = 'flex';
     }
@@ -19,7 +19,6 @@
     }
 }
     ());
-
 
 
 //eComm
